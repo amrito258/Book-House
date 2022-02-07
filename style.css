@@ -6,7 +6,22 @@
 body{
     background-color: rgba(0, 0, 0, 0.274);
     font-family: 'Poppins', 'Noto Serif Bengali', sans-serif;
+    opacity: 0;
+    animation: bodyani 1s ease forwards;
 }
+
+@keyframes bodyani{
+    100%{
+        opacity: 1;
+    }
+}
+
+::selection{
+    background-color: rgba(0, 0, 0, 0.562);
+    color: rgba(255, 255, 255, 0.753);
+}
+
+/* the styles of document header start */
 
 header{
     display: flex;
@@ -17,12 +32,33 @@ header{
 
 header h1{
     font-size: 50px;
+    transform: translateY(50px);
+    opacity: 0;
+    animation: headerani 0.8s ease-in 0.8s forwards;
+}
+
+@keyframes headerani{
+    50%{
+        opacity: 0;
+    }
+
+    100%{
+        transform: translateY(0px);
+        opacity: 1;
+    }
 }
 
 header img{
     width: 200px;
     height: 200px;
+    transform: translateY(70px) rotate(180deg);
+    opacity: 0;
+    animation: headerani 0.8s ease-in forwards;
 }
+
+/* the styles of document header end */
+
+/* media query section of index start */
 
 @media only screen and (max-width: 360px){
     header h1{
@@ -40,27 +76,57 @@ header img{
     }
 }
 
+@media only screen and(max-width:214px){
+    .book:hover{
+        transform: translateY(-20px);
+        box-shadow: 0px 2px 18px 0px #000;
+    }
+}
+
+/* media query section of index end */
+
+/* book section header style start */
+
 .section-header{
     margin-bottom: 20px;
     margin-top: 100px;
     padding-left: 16px;
+    opacity: 0;
+    animation: sec-head-ani 2s 1s ease-out forwards;
 }
 
-.section-header img{
-    width: 25px;
-    height: 25px;
-    animation: book-icon 2s ease-out infinite forwards;
+@keyframes sec-head-ani{
+    50%{
+        opacity: 0;
+    }
+
+    to{
+        opacity: 1;
+    }
 }
 
 @keyframes book-icon{
     0%, 100%{
         transform: scale(1);
+        opacity: 1;
     }
 
     50% {
         transform: scale(1.5);
+        opacity: 1;
     }
 }
+
+.section-header img{
+    width: 25px;
+    height: 25px;
+    opacity: 0;
+    animation: book-icon 2s 2s ease-out infinite forwards;
+}
+
+/* book section header style end */
+
+/* the styles of books start */
 
 .book-section{
     display: flex;
@@ -74,13 +140,13 @@ header img{
     width: 170px;
     height: 330px;
     border-radius: 8px;
-    margin-top: 10px;
-    transition: transform 0.2s ease-in;
+    margin-top: 20px;
+    transition: all 0.2s ease-in;
     overflow: hidden;
 }
 
 .book:hover{
-    transform: scale(1.2) translateY(-50px);
+    transform: scale(1.1) translateY(-30px);
     box-shadow: 0px 2px 18px 0px #000;
 }
 
@@ -105,15 +171,35 @@ header img{
     font-weight: 600;
 }
 
-.text-section p{
-    padding-left: 3px;
+.book-name a{
+    text-decoration: none;
+    color: white;
 }
 
-.price{
-    padding-left: 30px;
+.book-name a:hover{
+    text-decoration: underline;
+}
+
+.text-section p{
+    padding-left: 3px;
 }
 
 .price-icon{
     width: 17px;
     height: 17px;
 }
+
+.date-and-price {
+    display: flex;
+    justify-content: space-between;
+}
+
+.date-and-price p{
+    padding: 0px 3px 0px 3px;
+}
+
+.date-and-price p:nth-child(1){
+    padding-top: 3px;
+}
+
+/* the styles of books end */
