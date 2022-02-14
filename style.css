@@ -4,7 +4,7 @@
 }
 
 body{
-    background-color: rgba(0, 0, 0, 0.274);
+    background-color: rgba(0, 0, 0, 0.281);
     font-family: 'Poppins', 'Noto Serif Bengali', sans-serif;
     opacity: 0;
     animation: bodyani 1s ease forwards;
@@ -33,6 +33,7 @@ header{
 header h1{
     font-size: 50px;
     transform: translateY(50px);
+    font-weight: bold;
     opacity: 0;
     animation: headerani 0.8s ease-in 0.8s forwards;
 }
@@ -58,7 +59,120 @@ header img{
 
 /* the styles of document header end */
 
+/* the style of navigation section start */
+
+.navbar{
+    background-color: rgb(54, 53, 53);
+    margin-top: 50px;
+    animation: nav-ani 2s ease-out 0.5s forwards;
+    visibility: hidden;
+}
+
+@keyframes nav-ani{
+    50%{
+        visibility: hidden;
+    }
+
+    90%{
+        visibility: hidden;
+    }
+
+    to{
+        visibility: visible;
+    }
+}
+
+.navbar .nav-ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    list-style: none;
+    padding: 10px 0 10px 0;
+}
+
+.navbar .nav-ul .nav-li{
+    text-align: center;
+    vertical-align: middle;
+}
+
+.navbar .nav-ul .nav-li a{
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.navbar .nav-ul .nav-li a i{
+    font-size: 13px;
+}
+  
+.nav-li .dropdown-content {
+   display: none;
+   position: absolute;
+   background-color: rgb(37, 36, 36);
+   min-width: 160px;
+   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+   z-index: 5;
+   text-align: left;
+}
+  
+.nav-li .dropdown-content a {
+   color: white;
+   padding: 5px 2px;
+   text-decoration: none;
+   display: block;
+   border-bottom: 0.1px solid white;
+   font-size: 16px !important;
+}
+
+.nav-li .dropdown-content a:last-child{
+    border-bottom: none;
+}
+  
+.nav-li .dropdown-content a:hover {
+    background-color: rgb(58, 58, 58);
+}
+  
+.dropbtn:hover .dropdown-content{
+    display: block;
+}
+
+/* the style of navigation section end */
 /* media query section of index start */
+
+/* media query of nav bar start */
+
+@media only screen and (max-width:960px){
+    .navbar{
+        background: none;
+    }
+
+    .nav-li{
+        width: 250px;
+        background-color: rgb(73, 73, 73);
+        margin-top: 10px;
+        padding: 10px 0 10px 0;
+    }
+}
+
+@media only screen and (max-width:802px){
+    .nav-li{
+        width: 260px;
+    }
+}
+
+@media only screen and (max-width:519px){
+    .nav-li{
+        width: 100%;
+        margin-top: 0;
+        border-bottom: 1px white solid;
+    }
+
+    .nav-li:last-child{
+        border-bottom: none;
+    }
+}
+
+/* media query of nav bar end */
 
 @media only screen and (max-width: 360px){
     header h1{
@@ -68,7 +182,7 @@ header img{
 
 @media only screen and (max-width:300px){
     header h1{
-        font-size: 32px;
+        font-size: 32px !important;
     }
 
     .section-header{
@@ -91,12 +205,18 @@ header img{
     margin-bottom: 20px;
     margin-top: 100px;
     padding-left: 16px;
+    font-weight: 600;
+    font-size: 20px;
     opacity: 0;
-    animation: sec-head-ani 2s 1s ease-out forwards;
+    animation: sec-head-ani 2s 0.5s ease-out forwards;
 }
 
 @keyframes sec-head-ani{
     50%{
+        opacity: 0;
+    }
+
+    90%{
         opacity: 0;
     }
 
@@ -182,6 +302,7 @@ header img{
 
 .text-section p{
     padding-left: 3px;
+    padding-right: 3px;
 }
 
 .price-icon{
@@ -194,12 +315,8 @@ header img{
     justify-content: space-between;
 }
 
-.date-and-price p{
-    padding: 0px 3px 0px 3px;
-}
-
 .date-and-price p:nth-child(1){
-    padding-top: 3px;
+    padding-top: 4px;
 }
 
 /* the styles of books end */

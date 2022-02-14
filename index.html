@@ -6,30 +6,78 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css"><!-- stylesheet -->
-    <link rel="shortcut icon" href="images/fav-icon.jpg" type="image/jpg"><!-- favicon -->
+    <link rel="shortcut icon" href="images/logo.png"><!-- favicon -->
     <!-- Google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet"><!-- Poppins -->
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Bengali&display=swap" rel="stylesheet">
     <!-- Noto Serif Bengali -->
     <!-- Google Fonts -->
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <!-- bootstrap icon cdn -->
     <title>BOOK HOUSE</title>
 </head>
 
 <body>
 
+    <!-- header section of the page start -->
     <header>
         <img src="images/112-book-morph-outline-1--unscreen.gif" alt="book-icon">
         <h1>Book House</h1>
     </header>
+    <!-- header section of the page end -->
+
+    <!-- nav section start -->
+
+    <nav class="navbar">
+        <ul class="nav-ul">
+            <li class="nav-li"><a href="">HOME</a></li>
+            <li class="nav-li"><a href="contact.html">CONTACT</a></li>
+            <li class="nav-li"><a href="#">ABOUT US</a></li>
+            <li class="nav-li dropbtn"><a>NOVELS <i class="bi bi-caret-down-fill"></i></a>
+
+                <div class="dropdown-content">
+                    <a href="#popular-novels">Popular Novels</a>
+                    <a href="#popular-bang-novels">Popular Bengali Novels</a>
+                </div>
+
+            </li>
+            <li class="nav-li dropbtn"><a>COMICS <i class="bi bi-caret-down-fill"></i></a>
+
+                <div class="dropdown-content">
+                    <a href="#popular-comics">Popular Comics</a>
+                    <a href="#popular-kids-comics">Popular Kids Comics</a>
+                    <a href="#popular-bangla-comics">Popular Bengali Comics</a>
+                    <a href="#popular-manga">Popular Manga</a>
+                    <a href="#popular-kids-manga">Popular Kids Manga</a>
+                    <a href="#popular-manga18+">Popular Manga (18+)</a>
+                </div>
+
+            </li>
+            <li class="nav-li dropbtn"><a>SCI-FI <i class="bi bi-caret-down-fill"></i></a>
+
+                <div class="dropdown-content">
+                    <a href="#">The Martian</a>
+                    <a href="#">Jurassic Park</a>
+                    <a href="#">A Wrinkle In Time</a>
+                    <a href="#">Starship Troopers</a>
+                    <a href="#">The Left Hand Of Darkness</a>
+                    <a href="#">The Three Body Problem</a>
+                </div>
+
+            </li>
+        </ul>
+    </nav>
+
+    <!-- nav section end -->
 
     <!-- the novel section start -->
 
-    <h2 class="section-header"><img src="images/book-icon.png" alt="book-icon"> Popular Novels</h2>
+    <h2 class="section-header" id="popular-novels"><img src="images/book-icon.png" alt="book-icon"> Popular Novels</h2>
 
     <section class="book-section">
         <!-- the catcher in the rye book start -->
@@ -144,7 +192,7 @@
 
     <!-- the bengali novel section start -->
 
-    <h2 class="section-header"><img src="images/book-icon.png" alt="book-icon"> Popular Bengali Novels</h2>
+    <h2 class="section-header" id="popular-bang-novels"><img src="images/book-icon.png" alt="book-icon"> Popular Bengali Novels</h2>
 
     <section class="book-section">
         <!-- কাকাবাবু সমগ্র ১-৬ book start -->
@@ -358,7 +406,7 @@
                 <img src="images/the-three-body-problem.jpg" alt="the-three-body-problem-image">
             </div>
             <div class="text-section">
-                <p class="book-name">THE THREE BODY PROBLEM</p>
+                <p class="book-name" style="font-size: 12px !important;">THE THREE BODY PROBLEM</p>
                 <p>By Liu Cixin</p>
                 <div class="date-and-price">
                     <p>2008</p>
@@ -372,7 +420,7 @@
 
     <!-- the popular comics section start -->
 
-    <h2 class="section-header"><img src="images/book-icon.png" alt="book-icon"> Popular Comics</h2>
+    <h2 class="section-header" id="popular-comics"><img src="images/book-icon.png" alt="book-icon"> Popular Comics</h2>
 
     <section class="book-section">
         <!-- blankets comic start -->
@@ -399,7 +447,7 @@
                 <p class="book-name">THE MAGIC FISH</p>
                 <p>By Trung Le Nguyen</p>
                 <div class="date-and-price">
-                    <p>13 October, 2020</p>
+                    <p>13 Oct, 2020</p>
                     <p><img src="images/price-icon.gif" alt="price-icon" class="price-icon">$0.00</p>
                 </div>
             </div>
@@ -486,7 +534,7 @@
 
     <!-- the popular kids comics section start -->
 
-    <h2 class="section-header"><img src="images/book-icon.png" alt="book-icon"> Popular Kids Comics</h2>
+    <h2 class="section-header" id="popular-kids-comics"><img src="images/book-icon.png" alt="book-icon"> Popular Kids Comics</h2>
 
     <section class="book-section">
         <!-- new kid comic start -->
@@ -525,7 +573,7 @@
                 <img src="images/american-born-chineese.jpg" alt="american-born-chineese-image">
             </div>
             <div class="text-section">
-                <p class="book-name">AMERICAN BORN CHINESE</p>
+                <p class="book-name" style="font-size: 12px !important;">AMERICAN BORN CHINESE</p>
                 <p>By Gene Luen Yang</p>
                 <div class="date-and-price">
                     <p>2006</p>
@@ -599,7 +647,7 @@
 
     <!-- the popular bengali comics start -->
 
-    <h2 class="section-header"><img src="images/book-icon.png" alt="book-icon"> Popular Bengali Comics</h2>
+    <h2 class="section-header" id="popular-bangla-comics"><img src="images/book-icon.png" alt="book-icon"> Popular Bengali Comics</h2>
 
     <section class="book-section">
 
@@ -617,7 +665,7 @@
                 </div>
             </div>
         </div><!-- the shorojontro bangla comic end -->
-        
+
         <!-- the karmakor ognutpat bangla comic start -->
         <div class="book">
             <div class="img-section">
@@ -714,7 +762,7 @@
 
     <!-- the manga section start -->
 
-    <h2 class="section-header"><img src="images/book-icon.png" alt="book-icon"> Popular Manga</h2>
+    <h2 class="section-header" id="popular-manga"><img src="images/book-icon.png" alt="book-icon"> Popular Manga</h2>
 
     <section class="book-section">
         <!-- one piece manga start -->
@@ -828,7 +876,7 @@
 
     <!-- the kid's manga section start -->
 
-    <h2 class="section-header"><img src="images/book-icon.png" alt="book-icon"> Popular Kids Manga</h2>
+    <h2 class="section-header" id="popular-kids-manga"><img src="images/book-icon.png" alt="book-icon"> Popular Kids Manga</h2>
 
     <section class="book-section">
 
@@ -944,7 +992,7 @@
 
     <!-- the 18+ manga section start -->
 
-    <h2 class="section-header"><img src="images/book-icon.png" alt="book-icon"> Popular Manga (18+)</h2>
+    <h2 class="section-header" id="popular-manga18+"><img src="images/book-icon.png" alt="book-icon"> Popular Manga (18+)</h2>
 
     <section class="book-section">
 
@@ -1056,6 +1104,14 @@
     </section>
 
     <!-- the 18+ manga section end -->
+
+    <!-- footer section start -->
+
+    <footer>
+
+    </footer>
+
+    <!-- footer section end -->
 
 </body>
 
