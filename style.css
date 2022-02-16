@@ -113,6 +113,7 @@ header img{
    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
    z-index: 5;
    text-align: left;
+   transition: display 5s linear;
 }
   
 .nav-li .dropdown-content a {
@@ -320,3 +321,62 @@ header img{
 }
 
 /* the styles of books end */
+
+/* footer section style start */
+
+footer{
+    margin-top: 100px;
+}
+
+.social-info{
+    background-color: #1F1E28;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-top: 30px;
+}
+
+.social-info-part{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+}
+
+.social-info-part a{
+    margin-right: -90px;
+}
+
+.social-info-part a img{
+    width: 50%;
+    height: 100%;
+}
+
+.social-info-part p{
+    color: white;
+    font-weight: bold;
+}
+
+.fb-footer img, .insta-footer img, .linked-footer img{
+    height: 50%;
+    width: 35%;
+}
+
+.twitter-footer img{
+    height: 100%;
+    width: 100%;
+}
+
+.copyright-section{
+    background-color: #18171D;
+    text-align: center;
+}
+
+.copyright-section p{
+    color: white;
+    font-size: 10px;
+    padding: 3px;
+}
+
+/* footer section style end */

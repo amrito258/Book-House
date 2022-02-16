@@ -2,7 +2,7 @@ body{
     background-color: rgba(0, 0, 0, 0.281);
     font-family: 'Poppins', 'Noto Serif Bengali', sans-serif;
     opacity: 0;
-    animation: bodyani 1s ease forwards;
+    animation: bodyani 2s ease forwards;
 }
 
 @keyframes bodyani{
@@ -95,7 +95,7 @@ body{
     text-decoration: underline;
     transition: transform 0.5s ease-in;
     font-weight: 600;
-    z-index: 5;
+    z-index: 2;
 }
 
 .call-link:hover p {
@@ -151,7 +151,7 @@ section:hover .fill{
     justify-content: center;
     width: 250px;
     height: 60px;
-    background-color: rgb(99, 99, 99);
+    background-color: rgb(71, 70, 70);
     margin-top: 300px;
     color: white;
     position: relative;

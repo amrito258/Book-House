@@ -1,0 +1,63 @@
+
+/* main section style start */
+
+.main-section{
+    margin-top: 100px;
+}
+
+.book-header h1{
+    padding-left: 5px;
+    border-bottom: 2px black solid;
+    border-top: 2px solid black;
+}
+
+.img-and-para{
+    margin-top: 70px;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.main-img{
+    height: 300px;
+    margin-top: 30px;
+}
+
+.main-img img{
+    width: 100%;
+    height: 100%;
+}
+
+.main-para{
+    width: 700px;
+    margin-top: 30px;
+}
+
+.main-para p{
+    text-align: center;
+}
+
+.buy-option{
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button{
+    color: white;
+    background-color: rgb(65, 65, 65);
+    text-decoration: none;
+    padding: 5px 10px;
+    transition: all 0.5s linear;
+    font-size: 13px;
+    text-align: center;
+}
+
+.button:hover{
+    background-color: rgba(82, 80, 80, 0.699);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+/* main section style end */
