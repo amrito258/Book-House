@@ -50,14 +50,17 @@
     background-color: rgb(65, 65, 65);
     text-decoration: none;
     padding: 5px 10px;
-    transition: all 0.5s linear;
+    transition: all 0.2s linear;
     font-size: 13px;
     text-align: center;
 }
 
 .button:hover{
     background-color: rgba(82, 80, 80, 0.699);
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.button:active{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 16px 15px;
 }
 
 /* main section style end */
