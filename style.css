@@ -105,7 +105,7 @@ header img{
     font-size: 13px;
 }
   
-.nav-li .dropdown-content {
+.navbar .nav-li .dropdown-content {
    display: none;
    position: absolute;
    background-color: rgb(37, 36, 36);
@@ -153,6 +153,10 @@ header img{
         margin-top: 10px;
         padding: 10px 0 10px 0;
     }
+
+    .navbar .nav-li .dropdown-content{
+        margin-top: 10px;
+    }
 }
 
 @media only screen and (max-width:802px){
@@ -171,6 +175,12 @@ header img{
     .nav-li:last-child{
         border-bottom: none;
     }
+
+    .navbar .nav-li .dropdown-content{
+        width: 100%;
+        text-align: center;
+    }
+    
 }
 
 /* media query of nav bar end */
@@ -328,46 +338,6 @@ footer{
     margin-top: 100px;
 }
 
-.social-info{
-    background-color: #1F1E28;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-evenly;
-    padding-top: 30px;
-}
-
-.social-info-part{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 200px;
-}
-
-.social-info-part a{
-    margin-right: -90px;
-}
-
-.social-info-part a img{
-    width: 50%;
-    height: 100%;
-}
-
-.social-info-part p{
-    color: white;
-    font-weight: bold;
-}
-
-.fb-footer img, .insta-footer img, .linked-footer img{
-    height: 50%;
-    width: 35%;
-}
-
-.twitter-footer img{
-    height: 100%;
-    width: 100%;
-}
-
 .copyright-section{
     background-color: #18171D;
     text-align: center;
@@ -377,6 +347,42 @@ footer{
     color: white;
     font-size: 10px;
     padding: 3px;
+}
+
+.social-info{
+    background-color: #1F1E28;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 20px;
+}
+
+.social-info i{
+    font-size: 40px;
+    margin: 0 20px;
+    margin-top: 10px;
+    transition: transform 0.3s linear;
+}
+
+.footer-facebook i{
+    color: #3960AA;
+}
+
+.footer-instagram i{
+    color: #E16441;
+}
+
+.footer-linkedin i{
+    color: #0073B1;
+}
+
+.footer-twitter i{
+    color: #1C9CEA;
+}
+
+.social-info i:hover{
+    transform: translateY(-10px) scale(1.2);
 }
 
 /* footer section style end */

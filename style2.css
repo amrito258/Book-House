@@ -77,7 +77,7 @@ body{
 
 .email-link p {
     color: black;
-    text-decoration: underline;
+    text-decoration: underline rgb(153, 149, 149);
     transform: translateY(38px);
     transition: transform 0.5s ease-in;
     font-weight: 600;
@@ -92,7 +92,7 @@ body{
 .call-link p {
     transform: translateY(30px);
     color: rgb(15, 15, 15);
-    text-decoration: underline;
+    text-decoration: underline rgb(153, 149, 149);
     transition: transform 0.5s ease-in;
     font-weight: 600;
     z-index: 2;
@@ -109,7 +109,6 @@ body{
 .fill{
     width: 125%;
     height: 125%;
-    background-color: #333;
     position: absolute;
     bottom: -220px;
     left: -220px;
@@ -127,12 +126,12 @@ section:hover .fill{
 @media only screen and (max-width:917px) {
     .call-link p {
         transform: translateY(0px);
-        text-decoration: underline;
+        text-decoration: underline rgb(124, 124, 124);
     }
 
     .email-link p {
         transform: translateY(0px);
-        text-decoration: underline;
+        text-decoration: underline rgb(124, 124, 124);
     }
 }
 
