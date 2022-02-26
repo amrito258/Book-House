@@ -73,6 +73,10 @@ header img{
         visibility: hidden;
     }
 
+    60%{
+        visibility: hidden;
+    }
+
     90%{
         visibility: hidden;
     }
