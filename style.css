@@ -7,7 +7,7 @@ body{
     background-color: rgba(0, 0, 0, 0.281);
     font-family: 'Poppins', 'Noto Serif Bengali', sans-serif;
     opacity: 0;
-    animation: bodyani 1s ease forwards;
+    animation: bodyani 1.5s ease forwards;
 }
 
 @keyframes bodyani{
