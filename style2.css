@@ -135,6 +135,13 @@ section:hover .fill{
     }
 }
 
+@media only screen and (max-width:246px){
+    .email-link, .call-link{
+        width: 180px;
+        height: 180px;
+    }
+}
+
 /* follow us section style start */
 
 .follow-us-section{
