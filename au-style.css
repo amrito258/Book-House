@@ -26,6 +26,7 @@ main{
 .intro-para{
     width: 600px;
     height: auto;
+    color: rgb(56, 56, 56);
 }
 
 .social-icons-intro{
@@ -61,7 +62,7 @@ main{
 
 @media only screen and (max-width:368px){
     .image-section{
-        width: 390px;
+        width: 370px;
     }
 }
 
@@ -69,21 +70,21 @@ main{
     .image-section{
         width: 300px;
     }
-}
-
-@media only screen and (max-width:320px){
-    .image-section{
-        height: 380px;
-    }
-}
-
-@media only screen and (max-width:240px){
-    .image-section{
-        height: 100%;
-    }
 
     .social-icons-intro i{
         font-size: 20px !important;
+    }
+}
+
+@media only screen and (max-width:260px){
+    .image-section{
+        height: 100%;
+    }
+}
+
+@media only screen and (max-width:259px){
+    .social-icons-intro i{
+        font-size: 36px !important;
     }
 }
 

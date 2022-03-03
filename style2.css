@@ -75,7 +75,7 @@ body{
     }
 }
 
-.email-link p {
+.email-link p{
     color: black;
     text-decoration: underline rgb(153, 149, 149);
     transform: translateY(38px);
@@ -89,7 +89,7 @@ body{
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
-.call-link p {
+.call-link p{
     transform: translateY(30px);
     color: rgb(15, 15, 15);
     text-decoration: underline rgb(153, 149, 149);
@@ -98,11 +98,11 @@ body{
     z-index: 2;
 }
 
-.call-link:hover p {
+.call-link:hover p{
     transform: translateY(0px);
 }
 
-.email-link:hover p {
+.email-link:hover p{
     transform: translateY(0px);
 }
 
@@ -124,12 +124,12 @@ section:hover .fill{
 }
 
 @media only screen and (max-width:917px) {
-    .call-link p {
+    .call-link p{
         transform: translateY(0px);
         text-decoration: underline rgb(124, 124, 124);
     }
 
-    .email-link p {
+    .email-link p{
         transform: translateY(0px);
         text-decoration: underline rgb(124, 124, 124);
     }
@@ -194,27 +194,27 @@ section:hover .fill{
 }
 
 .text{
-    transition: all 0.2s ease-in;
-}
-
-.share{
-    transition: all 0.3s ease-in;
-}
-
-.icon:nth-child(1){
-    transition: all 0.2s ease-in;
-}
-
-.icon:nth-child(2){
-    transition: all 0.3s ease-in;
-}
-
-.icon:nth-child(3){
     transition: all 0.4s ease-in;
 }
 
-.icon:nth-child(4){
+.share{
     transition: all 0.5s ease-in;
+}
+
+.icon:nth-child(1){
+    transition: all 0.4s ease-in;
+}
+
+.icon:nth-child(2){
+    transition: all 0.5s ease-in;
+}
+
+.icon:nth-child(3){
+    transition: all 0.6s ease-in;
+}
+
+.icon:nth-child(4){
+    transition: all 0.7s ease-in;
 }
 
 .container:hover .text,

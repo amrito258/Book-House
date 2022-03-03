@@ -9,6 +9,8 @@
     padding-left: 5px;
     border-bottom: 2px black solid;
     border-top: 2px solid black;
+    font-size: 28px;
+    font-weight: 500;
 }
 
 .img-and-para{
@@ -27,7 +29,7 @@
 @media only screen and (max-width:215px) {
     .main-img{
         height: 280px;
-        width: 95%;
+        width: 85%;
     }
 }
 
@@ -69,7 +71,7 @@
     background-color: rgb(65, 65, 65);
     text-decoration: none;
     padding: 5px 10px;
-    transition: all 0.2s linear;
+    transition: all 0.1s linear;
     font-size: 13px;
     text-align: center;
 }
@@ -79,7 +81,21 @@
 }
 
 .button:active{
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 25px 15px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 10px 15px;
+}
+
+@media only screen and (max-width:768px){
+    .button{
+        transition: all linear;
+    }
+
+    .button:hover{
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 16px 15px;
+    }
+
+    .button:active{
+        box-shadow: none;
+    }
 }
 
 /* main section style end */

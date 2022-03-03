@@ -99,6 +99,13 @@ header img{
     vertical-align: middle;
 }
 
+.nav-li:nth-child(1) a:hover,
+.nav-li:nth-child(2) a:hover, 
+.nav-li:nth-child(3) a:hover{
+    text-shadow: -1px -3px 5px #000000;
+    color: rgb(173, 170, 170) !important;
+}
+
 .navbar .nav-ul .nav-li a{
     color: white;
     text-decoration: none;
@@ -116,8 +123,6 @@ header img{
    min-width: 160px;
    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
    z-index: 5;
-   text-align: left;
-   transition: all 1s linear;
 }
   
 .nav-li .dropdown-content a {
@@ -127,6 +132,7 @@ header img{
    display: block;
    border-bottom: 0.1px solid white;
    font-size: 16px !important;
+   text-align: left;
 }
 
 .nav-li .dropdown-content a:last-child{
@@ -178,8 +184,11 @@ header img{
     }
 
     .navbar .nav-li .dropdown-content{
-        margin-top: 10px;
+        margin-top: 15px;
         width: 250px;
+    }
+
+    .navbar .nav-li .dropdown-content a{
         text-align: center;
     }
 }
@@ -231,8 +240,23 @@ header img{
 
 @media only screen and(max-width:214px){
     .book:hover{
+        box-shadow: 0px 2px 18px 0px black;
         transform: translateY(-20px);
-        box-shadow: 0px 2px 18px 0px #000;
+    }
+}
+
+@media only screen and (max-width:557px){
+    .section-header{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width:371px){
+    .book{
+        margin: 0 8px;
     }
 }
 
@@ -283,6 +307,21 @@ header img{
     animation: book-icon 2s 2s ease-out infinite forwards;
 }
 
+.section-header span{
+    margin-top: 5px;
+    animation: sec-head-span-ani 1.2s ease-out infinite;
+}
+
+@keyframes sec-head-span-ani{
+    50%{
+        transform: translateY(-5px);
+    }
+
+    70%{
+        transform: translateY(0px);
+    }
+}
+
 /* book section header style end */
 
 /* the styles of books start */
@@ -306,7 +345,10 @@ header img{
 
 .book:hover{
     transform: scale(1.1) translateY(-24px);
-    box-shadow: 0px 2px 18px 0px #000;
+}
+
+.book:active{
+    box-shadow: 0px 2px 25px 0px #000;
 }
 
 .img-section{
