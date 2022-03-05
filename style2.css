@@ -223,4 +223,125 @@ section:hover .fill{
     transform: translateY(-50px);
 }
 
+.or-header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px 0;
+}
+
+form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+form input, form textarea{
+    margin-top: 20px;
+}
+
+form input{
+    width: 400px;
+    padding: 10px 5px;
+    border-radius: 20px;
+    border: 2px rgb(121, 119, 119) solid;
+    background-color: rgb(189, 189, 189);
+    outline: none;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 18px;
+    transition: all 0.3s linear;
+}
+
+form input:focus, form textarea:focus{
+    background-color: rgba(170, 165, 165, 0.315);
+    color: white;
+    border: 2px solid rgb(73, 71, 71);
+    border-radius: 0;
+}
+
+form input:focus::placeholder, form textarea:focus::placeholder{
+    color: white;
+}
+
+form textarea{
+    width: 550px;
+    resize: vertical;
+    border-radius: 30px;
+    padding: 20px 25px;
+    border: 2px rgb(121, 119, 119) solid;
+    background-color: rgb(189, 189, 189);
+    outline: none;
+    font-size: 20px;
+    font-family: sans-serif;
+    transition: all 0.3s linear;
+}
+
+form input[type=submit]{
+    width: 120px;
+    padding: 8px 0;
+    cursor: pointer;
+    border-radius: 0px;
+}
+
+form input[type=submit]:hover{
+    background-color: rgb(185, 182, 182);
+    border-radius: 10px;
+}
+
+form input[type=submit]:active{
+    background-color: rgb(97, 97, 97);
+}
+
+@media only screen and (max-width:619px){
+    form textarea{
+        width: 80%;
+    }
+
+    form input:nth-child(1),
+    form input:nth-child(2){
+        width: 60%;
+    }
+}
+
+@media only screen and (max-width:402px){
+    form input:nth-child(1),
+    form input:nth-child(2){
+        font-size: 15px;
+    }
+
+    form textarea{
+        font-size: 17px;
+    }
+}
+
+@media only screen and (max-width:320px){
+    form input:nth-child(1),
+    form input:nth-child(2){
+        font-size: 13px;
+    }
+
+    form input[type=submit]{
+        width: 100px;
+        padding: 5px 0;
+    }
+}
+
+@media only screen and (max-width:280px){
+    form input:nth-child(1),
+    form input:nth-child(2){
+        font-size: 11px;
+    }
+
+    form textarea{
+        font-size: 14px;
+    }
+
+    form input[type=submit]{
+        width: 80px;
+        padding: 4px 0;
+    }
+}
+
 /* follow us section style end */

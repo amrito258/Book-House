@@ -71,13 +71,14 @@
     background-color: rgb(65, 65, 65);
     text-decoration: none;
     padding: 5px 10px;
-    transition: all 0.1s linear;
+    transition: all 0.3s linear;
     font-size: 13px;
     text-align: center;
 }
 
 .button:hover{
     background-color: rgba(82, 80, 80, 0.699);
+    border-radius: 15px;
 }
 
 .button:active{
